@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/optour_backgroung"
+    tools:context=".ui.fragments.connection.SplashScreenFragment">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/siv_splash_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_transparent_cropped" />
+
+    <TextView
+        android:id="@+id/tv_splash_app_name"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:fontFamily="@font/proxima_nova_bold"
+        app:layout_constraintBottom_toBottomOf="@+id/siv_splash_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toEndOf="@+id/siv_splash_logo"
+        app:layout_constraintTop_toTopOf="@+id/siv_splash_logo"
+        app:layout_constraintVertical_bias="0.506" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        style="@style/Widget.Material3.Button.OutlinedButton"-->
+<!--        android:theme="@style/AppTheme"-->
+<!--        android:text="@string/register"-->
+<!--        android:textColor="@color/material_dynamic_neutral0"-->
+<!--        app:backgroundTint="@color/material_dynamic_secondary95"-->
+<!--        android:id="@+id/btn_splash_register"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="44dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/btn_splash_login"-->
+<!--        app:layout_constraintHorizontal_bias="0.489"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/btn_splash_login"-->
+
+<!--        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"/>-->
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/btn_splash_login"-->
+<!--        style="@style/Widget.Material3.Button.OutlinedButton"-->
+<!--        android:layout_width="180dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="28dp"-->
+<!--        android:text="@string/login"-->
+<!--        android:textColor="@color/material_dynamic_neutral0"-->
+<!--        app:backgroundTint="@color/material_dynamic_secondary95"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/btn_splash_register"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+
+
+<!--        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"-->
+<!--        />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_splash_login"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:text="@string/login"
+            android:textColor="@color/quantum_brown"
+            app:backgroundTint="@color/md_theme_light_surface"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/siv_splash_logo" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_splash_register"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/register"
+            android:textColor="@color/quantum_brown"
+            app:backgroundTint="@color/md_theme_light_surface"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_splash_login"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_splash_login"
+            app:layout_constraintTop_toBottomOf="@+id/btn_splash_login" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MAP_API_KEY" translatable="false">YOUR_KEY</string>
+</resources>

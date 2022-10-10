@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.main.ScheduleFragment">
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_schedule_title"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/proxima_nova_bold"-->
+<!--        android:text="@string/schedule"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="55sp" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_gravity="top|center"
+        android:orientation="vertical">
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_schedule_trip_name"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/proxima_nova_bold"-->
+<!--            android:text="@string/trip_name"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textSize="35sp" />-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinner_schedule_trip_layout"
+            android:labelFor="@+id/spinner_schedule_trip"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:hint="@string/trip_name_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/spinner_schedule_trip"
+                android:inputType="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="@string/choose_date" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_schedule_choose_day"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:icon="@drawable/ic_calendar_month" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_schedule_choosen_date"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="@string/default_date" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_schedule_points"
+        android:layout_marginBottom="100dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/custom_border"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center"
+        android:paddingHorizontal="15dp"
+        android:layout_marginBottom="25dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_schedule_create"
+        android:layout_marginStart="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create"/>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_login_username_layout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="32"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/name"
+            app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sheet_marker_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_marker_name"
+            android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sheet_marker_validate"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_done_outline"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sheet_marker_delete"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_delete"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_sheet_marker_description"
+        android:layout_marginHorizontal="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/lorem_ipsum"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="15dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sheet_marker_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginRight="10dp"
+            android:text="@string/point_start"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_sheet_marker_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="@string/point_end"/>
+
+    </LinearLayout>
+
+
+
+<!--    <Button-->
+<!--        style="@style/Widget.Material3.Button.IconButton"-->
+<!--        android:icon="@drawable/ic_delete"-->
+<!--        android:id="@+id/iconButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+
+</LinearLayout>

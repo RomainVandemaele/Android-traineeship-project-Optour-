@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Optour</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="first_name">first name</string>
+    <string name="welcome_new">Welcome to optour</string>
+    <string name="last_name">last name</string>
+    <string name="mail">email</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="cancel">Cancel</string>
+    <string name="max_length">min 5 characters</string>
+    <string name="min_length">min 6 characters</string>
+    <string name="username_or_mail">username</string>
+    <string name="register_wrong">form non valid</string>
+    <string name="register_username_taken">username already taken</string>
+    <string name="register_ok">account successfully created</string>
+    <string name="register_unknown_error">"unknown error "</string>
+    <string name="register_server_unavailable">server unavailable : try again</string>
+    <string name="nav_bar_home">Home</string>
+    <string name="nav_bar_map">Plan</string>
+    <string name="nav_bar_schedule">Schedule</string>
+    <string name="nav_bar_settings">Settings</string>
+    <!-- Preference Titles -->
+    <string name="messages_header" translatable="false">Messages</string>
+    <string name="sync_header" translatable="false">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" translatable="false">Your signature</string>
+    <string name="reply_title" translatable="false">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" translatable="false">Sync email periodically</string>
+    <string name="attachment_title" translatable="false">Download incoming attachments</string>
+    <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
+    <string name="default_username" translatable="false">rvdemael</string>
+    <string name="default_password" translatable="false">password</string>
+    <string name="search">Search </string>
+    <string name="dialog_code">Enter your code</string>
+    <string name="dialog_et_code">mail code</string>
+    <string name="token_ok">account activated</string>
+    <string name="verification_code">code verification</string>
+    <string name="validate">Validate</string>
+    <string name="token_wrong">wrong code</string>
+    <string name="token_not_ok">account not yet activated</string>
+    <string name="server_error_token">server error : try again</string>
+    <string name="marker_title">title</string>
+    <string name="marker_desc">descr</string>
+    <string name="place_not_found">This place was not found</string>
+    <string name="delete">Delete</string>
+    <string name="default_marker_name">Point</string>
+    <string name="name">name</string>
+    <string name="lorem_ipsum" translatable="false">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua\n. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur\n."</string>
+    <string name="account_not_activated">Your account is not yet activated</string>
+    <string name="new_trip">Create trip</string>
+    <string name="create">Create</string>
+    <string name="min_two_markers">You need at least two markers</string>
+    <string name="label_spinner_mode">mode of transport</string>
+    <string name="wait" translatable="false">This operation may takes some time</string>
+    <string name="all_fields_required">All fields are required</string>
+    <string name="server_error">Server error : could not upload</string>
+    <string name="trip_name">Trip</string>
+    <string name="modify">Modify</string>
+    <string name="trip_length" translatable="false">x km | y m</string>
+    <string name="content_description_picture" translatable="false">Illustration trip</string>
+    <string name="server_error_trips">Error : cannot find your trips</string>
+    <string name="welcome_p1">Welcome to Optour</string>
+    <string name="welcome_p2">Check your mail</string>
+    <string name="wrong_username">wrong username</string>
+    <string name="wrong_password">wrong password</string>
+    <string name="search_online">search online</string>
+    <string name="delete_trip_error">Error deleting trip</string>
+    <string name="new_btn">New</string>
+    <string name="default_comment" translatable="false">this sucks</string>
+    <string name="new_comment">new comment</string>
+    <string name="comment_not_empty">Comment should not be empty</string>
+    <string name="choose_date">Choose a day</string>
+    <string name="schedule">Schedule</string>
+    <string name="select_start_time">Select start time</string>
+    <string name="default_date" translatable="false">01/01/2000 10:00</string>
+    <string name="point_name">point</string>
+    <string name="time_spent">duration</string>
+    <string name="min" translatable="false">min</string>
+    <string name="trip_name_hint">trip name</string>
+    <string name="trip_step_type">type</string>
+    <string name="wrong_format_duration" translatable="false">Duration should be a decimal number</string>
+    <string name="select_trip_msg">select a trip first</string>
+    <string name="trips_not_found">Cannot find your trip</string>
+    <string name="trips_search_not_found">Search result not found</string>
+    <string name="trip_not_found">Could not find your trip</string>
+    <string name="trip_selected_not_found">The trip you selected was not found</string>
+    <string name="point_start">Set as start</string>
+    <string name="point_end">Set as finish</string>
+    <string name="account">Account</string>
+    <string name="username_title">Change username</string>
+    <string name="username_key">username</string>
+    <string name="password_key">password</string>
+    <string name="password_title">Change password</string>
+    <string name="mode_title">dark mode</string>
+    <string name="dark_mode">dark mode</string>
+    <string name="others">Others</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_account">DELETE ACCOUNT</string>
+    <string name="new_password">passsword changed</string>
+    <string name="really_delete_account">This operation is non reversible</string>
+    <string name="password_too_short">password must be at least 6 characters</string>
+    <string name="lookin_point">looking for the point</string>
+</resources>

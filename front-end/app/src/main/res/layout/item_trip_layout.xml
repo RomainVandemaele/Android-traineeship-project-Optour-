@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="?attr/materialCardViewFilledStyle"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:backgroundTintMode="screen"
+        >
+
+    <!-- Media -->
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_card_trip_illust"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        app:srcCompat="@drawable/defaultillust"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:contentDescription="@string/content_description_picture"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/tv_card_trip_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/tv_card_trip_origin_dest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="#737171"
+            android:layout_marginBottom="15dp"
+            />
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

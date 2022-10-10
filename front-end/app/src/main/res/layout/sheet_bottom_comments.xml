@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/standard_bottom_sheet_comments"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_sheet_bottom_comments"
+                android:backgroundTintMode="screen"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_sheet_bottom_new_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="@string/new_comment"
+                app:endIconMode="clear_text"
+                app:counterMaxLength="32"
+                app:counterEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_sheet_bottom_new_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_sheet_bottom_comments_add"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_gravity="bottom|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_add"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

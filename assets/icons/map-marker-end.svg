@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="31" viewBox="0 0 22 31">
+  <defs>
+    <filter id="map-marker-end-a" width="175%" height="400%" x="-37.5%" y="-150%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+    </filter>
+    <path id="map-marker-end-b" d="M10,25.5 C16.6666667,19.347477 20,13.9427151 20,9.28571429 C20,4.15735589 15.5228475,0 10,0 C4.4771525,0 2.41554911e-16,4.15735589 0,9.28571429 C0,13.9427151 3.33333333,19.347477 10,25.5 Z"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <ellipse cx="11" cy="28" fill="#000" fill-opacity=".4" filter="url(#map-marker-end-a)" rx="4" ry="1" style="mix-blend-mode:multiply"/>
+    <g transform="translate(1 1)">
+      <use fill="#FF0018" xlink:href="#map-marker-end-b"/>
+      <path stroke="#FFF" d="M9.66089933,25.8674381 C2.90155678,19.6293865 -0.5,14.1140052 -0.5,9.28571429 C-0.5,3.87259527 4.20894875,-0.5 10,-0.5 C15.7910513,-0.5 20.5,3.87259527 20.5,9.28571429 C20.5,14.1140052 17.0984432,19.6293865 10.3391007,25.8674381 L10,26.1803868 L9.66089933,25.8674381 Z"/>
+    </g>
+    <polygon fill="#FAFBFB" points="3.5 11.5 11.5 11.5 11.5 3.5 3.5 3.5" transform="translate(3.5 3)"/>
+  </g>
+</svg>

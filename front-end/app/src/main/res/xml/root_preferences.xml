@@ -1,0 +1,57 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/account">
+
+        <EditTextPreference
+            app:key="@string/username_key"
+            app:title="@string/username_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="@string/password_key"
+            app:title="@string/password_title"
+            />
+
+
+        <Preference
+            app:key="@string/log_out"
+            app:title="@string/log_out">
+<!--            <intent-->
+<!--                android:targetPackage="com.example.optitrip"-->
+<!--                android:targetClass="com.example.optitrip.ui.activities.ConnectionActivity" />-->
+        </Preference>
+
+        <Preference
+            app:key="@string/delete_account"
+            app:title="@string/delete_account"
+            />
+
+<!--        <ListPreference-->
+<!--            app:defaultValue="reply"-->
+<!--            app:entries="@array/reply_entries"-->
+<!--            app:entryValues="@array/reply_values"-->
+<!--            app:key="reply"-->
+<!--            app:title="@string/reply_title"-->
+<!--            app:useSimpleSummaryProvider="true" />-->
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="@string/others">
+
+        <SwitchPreferenceCompat
+            app:key="@string/dark_mode"
+            app:title="@string/mode_title" />
+
+<!--        <SwitchPreferenceCompat-->
+<!--            app:dependency="sync"-->
+<!--            app:key="attachment"-->
+<!--            app:summaryOff="@string/attachment_summary_off"-->
+<!--            app:summaryOn="@string/attachment_summary_on"-->
+<!--            app:title="@string/attachment_title" />-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

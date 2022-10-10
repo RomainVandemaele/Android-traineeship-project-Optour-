@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.optitrip.ui.fragments.main.MapsFragment"
+        android:label="MapsFragment" >
+        <action
+            android:id="@+id/action_mapsFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment"
+            app:restoreState="false"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.optitrip.ui.fragments.main.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_summaryFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_summaryFragment_to_displayTripFragment"
+            app:destination="@id/displayTripFragment" >
+            <argument
+                android:name="originFragment"
+                app:argType="string"
+                android:defaultValue="map" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.optitrip.ui.fragments.main.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_displayTripFragment"
+            app:destination="@id/displayTripFragment">
+            <argument
+                android:name="originFragment"
+                app:argType="string"
+                android:defaultValue="home" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.optitrip.ui.fragments.main.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.optitrip.ui.fragments.main.SettingsFragment"
+        android:label="SettingsFragment" />
+
+    <fragment
+        android:id="@+id/displayTripFragment"
+        android:name="com.example.optitrip.ui.fragments.main.DisplayTripFragment"
+        android:label="DisplayTripFragment" >
+        <argument
+            android:name="originFragment"
+            app:argType="string"
+            android:defaultValue="map" />
+
+        <action
+            android:id="@+id/action_displayTripFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+        <action
+            android:id="@+id/action_displayTripFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>
